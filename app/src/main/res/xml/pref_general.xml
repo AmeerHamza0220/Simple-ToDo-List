@@ -1,0 +1,14 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorListBackgroung"
+
+    >
+
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="switch_key"
+        android:summary="On"
+        android:icon="@drawable/alarm"
+        android:title="Turn off Alarm" />
+
+</PreferenceScreen>

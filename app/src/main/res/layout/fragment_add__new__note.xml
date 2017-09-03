@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    tools:context="com.example.lablnet.simplenote.Add_New_Note">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+        android:id="@+id/edtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edtDes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edtTitle"
+        android:layout_below="@+id/edtTitle"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:hint="Description"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edtDes"
+        android:layout_below="@+id/Reminder"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="31dp"
+        android:text="Save" />
+
+    <CheckBox
+        android:id="@+id/Reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtDes"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="Set Reminder" />
+
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnOk"
+        android:layout_alignBottom="@+id/btnOk"
+        android:layout_marginStart="11dp"
+        android:layout_toEndOf="@+id/btnOk"
+        android:text="Cancel" />
+</RelativeLayout>

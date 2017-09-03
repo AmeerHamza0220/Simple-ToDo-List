@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginStart="27dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="TextView"
+        android:layout_below="@+id/txtTitle"
+        android:layout_alignStart="@+id/txtTitle" />
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_alignBaseline="@+id/txtDescription"
+        android:layout_alignBottom="@+id/txtDescription"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="28dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/alarm"
+        android:layout_above="@+id/txtDescription"
+        android:layout_alignEnd="@+id/txtDate" />
+</RelativeLayout>
